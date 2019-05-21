@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href = "style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="snakeMain.js"></script>
+    <script src="snake.js"></script>
+    <script src="gridNode.js"></script>
+  </head>
+  <body>
+    <div class = "all">
+      <div class = "row">
+          <div class = "col-md-12">
+            <h1> SNAKE WARS</h1>
+          </div>
+      </div>
+      
+      <div class = "row" id = "scoreboard">
+        <div class = "col-md-6">
+            <h1 id = "playerscore">Player Score:</h1>
+        </div>
+        <div class = "col-md-6">
+            <h1 id = "cpuscore">CPU Score:</h1>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-md-4">
+            <Button class = "difficultyButton" id="level1" onclick="changeDifficulty(2, this.id)">Easy</Button>
+        </div>
+        <div class = "col-md-4" id>
+            <Button class = "difficultyButton" id="level2" onclick="changeDifficulty(1, this.id)">Hard</Button>
+        </div>
+        <div class = "col-md-4" id>
+            <Button class = "difficultyButton" id="level3" onclick="changeDifficulty(0, this.id)">Impossible</Button>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-md-12" id = "mainContainer"></div>
+      </div>
+    </div>
+  </body>
+</html>
