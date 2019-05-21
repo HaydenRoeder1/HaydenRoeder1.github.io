@@ -124,6 +124,12 @@ function keyPressed(){
             }
             s1 = new Snake(200, false, 0, 0);
             s2 = new Snake(1, true, cols-1, rows-1);
+            activeButton = document.getElementsByClassName("active")[0];
+            if(activeButton == null){
+                document.getElementById("level1").click();
+            }else{
+                activeButton.click();
+            }
             displayingWinner = false;
         }else if(keyCode === 50){//2: Start local multiplayer game
             grid = new Array(cols);
