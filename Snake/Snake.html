@@ -19,29 +19,32 @@
   </head>
   <body>
     <div class = "all">
-      <div class = "row">
-          <div class = "col-md-12">
-            <h1> SNAKE WARS</h1>
+      <div class = "top">
+        <div class = "row">
+            <div class = "col-md-12">
+              <h1> SNAKE WARS</h1>
+            </div>
+        </div>
+        
+        <div class = "row" id = "scoreboard">
+          <div class = "col-md-6">
+              <h1 id = "playerscore">Player Score:</h1>
           </div>
-      </div>
+          <div class = "col-md-6">
+              <h1 id = "cpuscore">CPU Score:</h1>
+          </div>
+        </div>
       
-      <div class = "row" id = "scoreboard">
-        <div class = "col-md-6">
-            <h1 id = "playerscore">Player Score:</h1>
-        </div>
-        <div class = "col-md-6">
-            <h1 id = "cpuscore">CPU Score:</h1>
-        </div>
-      </div>
-      <div class = "row">
-        <div class = "col-md-4">
-            <Button class = "difficultyButton" id="level1" onclick="changeDifficulty(2, this.id)">Easy</Button>
-        </div>
-        <div class = "col-md-4" id>
-            <Button class = "difficultyButton" id="level2" onclick="changeDifficulty(1, this.id)">Hard</Button>
-        </div>
-        <div class = "col-md-4" id>
-            <Button class = "difficultyButton" id="level3" onclick="changeDifficulty(0, this.id)">Impossible</Button>
+        <div class = "row">
+          <div class = "col-md-4">
+              <Button class = "difficultyButton" id="level1" onclick="changeDifficulty(2, this.id)">Easy</Button>
+          </div>
+          <div class = "col-md-4" id>
+              <Button class = "difficultyButton" id="level2" onclick="changeDifficulty(1, this.id)">Hard</Button>
+          </div>
+          <div class = "col-md-4" id>
+              <Button class = "difficultyButton" id="level3" onclick="changeDifficulty(0, this.id)">Impossible</Button>
+          </div>
         </div>
       </div>
       <div class = "row">

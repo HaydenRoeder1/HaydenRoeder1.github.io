@@ -4,7 +4,7 @@ html, body{
 body{
     margin: 0;
     display: flex;
-    background-color:grey;
+    background: linear-gradient(grey,red);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -14,8 +14,18 @@ body{
     border-width: 5px;
     border-color: red;
     border-style:solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.top{
+  color: white;
+  background-color: grey;
 }
 .difficultyButton{
+  border-bottom-style: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-color: red; /* Green */
   border: none;
   color: white;
@@ -24,6 +34,11 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+
+}
+.difficultyButton:hover{
+  background-color: rgba(51,51,51, .6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .active{
