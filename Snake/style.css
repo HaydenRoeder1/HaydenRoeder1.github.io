@@ -1,40 +1,45 @@
 html, body{
     height: 100%
 }
+
 body{
-    margin: 0;
     display: flex;
-    background: linear-gradient(grey,red);
+    background:  rgba(51,51,51,1);
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
+.spacer{
+  min-height: 10px;
+}
+
 
 .p5Canvas{
     border-width: 5px;
-    border-color: red;
+    border-color:white;
     border-style:solid;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 .top{
+  
   color: white;
-  background-color: grey;
+  background-color: rgba(200, 200, 0, .2);
+  border-radius: 5px;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
 }
 .difficultyButton{
   border-bottom-style: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background-color: red; /* Green */
+  background-color: white; /* Green */
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 16px;
-
+  min-width: 100%;
 }
 .difficultyButton:hover{
   background-color: rgba(51,51,51, .6);

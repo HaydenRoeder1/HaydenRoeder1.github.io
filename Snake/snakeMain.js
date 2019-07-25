@@ -19,9 +19,14 @@ function randIntLocation(){
     food.mult(scl);
 }
 function setup() {
+    window.addEventListener("keydown", function(e) {//Prevent arrow keys scrolling the page
+        // space and arrow keys
+        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            e.preventDefault();
+        }
+    }, false);
     cnv = createCanvas(window_width,window_height);
     cnv.parent('mainContainer');
-
 
     
     grid = new Array(cols);
@@ -131,6 +136,10 @@ function keyPressed(){
                 activeButton.click();
             }
             displayingWinner = false;
+            playerScore = document.getElementById("playerscore");
+            playerScore.innerHTML = "Player: " + s1.total;
+            cpuScore = document.getElementById("cpuscore");
+            cpuScore.innerHTML = "CPU: " + s2.total;
         }else if(keyCode === 50){//2: Start local multiplayer game
             grid = new Array(cols);
             for(var i = 0; i < rows; i++){
@@ -149,6 +158,10 @@ function keyPressed(){
             s1 = new Snake(200, false, 0, 0);
             s2 = new Snake(1, false, cols-1, rows-1);
             displayingWinner = false;
+            playerScore = document.getElementById("playerscore");
+            playerScore.innerHTML = "Player: " + s1.total;
+            cpuScore = document.getElementById("cpuscore");
+            cpuScore.innerHTML = "CPU: " + s2.total;
         }
     }else{
         if(keyCode === UP_ARROW){

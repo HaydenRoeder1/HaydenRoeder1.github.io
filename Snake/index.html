@@ -18,38 +18,44 @@
     <script src="gridNode.js"></script>
   </head>
   <body>
-    <div class = "all">
-      <div class = "top">
-        <div class = "row">
-            <div class = "col-md-12">
-              <h1> SNAKE WARS</h1>
+      <div class = "content">
+        <div class = "row top">
+          <div>
+            <h1 style = "background-color: black"> SNAKE WARS</h1>
+          </div>
+          <div id = "scoreboard">
+            <div class = "col-md-6">
+                <h1 id = "playerscore">Player Score:</h1>
             </div>
-        </div>
-        
-        <div class = "row" id = "scoreboard">
-          <div class = "col-md-6">
-              <h1 id = "playerscore">Player Score:</h1>
-          </div>
-          <div class = "col-md-6">
-              <h1 id = "cpuscore">CPU Score:</h1>
+            <div class = "col-md-6">
+                <h1 id = "cpuscore">CPU Score:</h1>
+            </div>
           </div>
         </div>
-      
+        <div class = "spacer"></div>
         <div class = "row">
-          <div class = "col-md-4">
-              <Button class = "difficultyButton" id="level1" onclick="changeDifficulty(2, this.id)">Easy</Button>
+            <div class = "col-sm-4 test">
+                <Button class = "difficultyButton" id="level1" onclick="changeDifficulty(2, this.id)">Easy</Button>
+            </div>
+            <div class = "col-sm-4 test" id>
+                <Button class = "difficultyButton" id="level2" onclick="changeDifficulty(1, this.id)">Hard</Button>
+            </div>
+            <div class = "col-sm-4 test" id>
+                <Button class = "difficultyButton" id="level3" onclick="changeDifficulty(0, this.id)">Impossible</Button>
+            </div>
           </div>
-          <div class = "col-md-4" id>
-              <Button class = "difficultyButton" id="level2" onclick="changeDifficulty(1, this.id)">Hard</Button>
-          </div>
-          <div class = "col-md-4" id>
-              <Button class = "difficultyButton" id="level3" onclick="changeDifficulty(0, this.id)">Impossible</Button>
-          </div>
+        <div class = "row">  
+          <div class = "col-md-12" id = "mainContainer"></div>
         </div>
+        <div class = "top">
+            <h1>CONTROLS:</h1> 
+            <h4>WHITE SNAKE: Arrows keys</h4>
+            <h4>BLACK SNAKE: WASD</h4>
+            <h1>OBJECTIVE:</h1>
+            <p>Collect as much food as possible and try to force the opposing snake to run into your tail.</p>
+            <p>You may cross over your own tail</p>
+          </div>
       </div>
-      <div class = "row">
-        <div class = "col-md-12" id = "mainContainer"></div>
-      </div>
-    </div>
+      
   </body>
 </html>
